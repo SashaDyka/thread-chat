@@ -12,34 +12,38 @@
             <img src="" alt="Threads Logo" class="logo">
         </header>
 
-        <main class="main">
-            <div class="post">
-                <div class="user-info">
-                    <img src="" alt="Avatar" class="avatar">
-                    <span class="username">username_1</span>
-                </div>
-                <div class="post-content">
-                    <p>Це перший допис. Тут може бути текст, який імітує допис у Threads.</p>
-                </div>
-                <div class="post-actions">
-                    <button class="action-btn">❤️</button>
-                    <button class="action-btn">💬</button>
-                    <button class="action-btn">🔁</button>
-                    <button class="action-btn">➡️</button>
-                </div>
-                <div class="post-stats">
-                    <span>120 лайків</span>
-                    <span>5 коментарів</span>
-                </div>
-            </div>
-       
-        </main>
+        <main id="main-content" class="main-content"></main>
 
-        <div class="bottom-bar">
-            <input type="text" placeholder="Create new messege..." class="bottom-bar__input">
-            <button class="send-button">></button>
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>New Message</h2>
+                    <button id="close-modal-btn" class="close-modal-btn">X</button>
+                </div>
+                
+                <form id="create-message-form">
+                    <div class="form-group">
+                        <label for="modal-user-id">Your nickname:</label>
+                        <input type="text" id="modal-user-id" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="modal-text">Message:</label>
+                        <textarea id="modal-text" rows="5" required></textarea>
+                    </div>
+
+                    <button type="submit" class="modal-btn-send">Send</button>
+                </form>
+            </div>
         </div>
+
+        <footer class="bottom-bar">
+            <button id="open-modal-btn" class="add-message-btn">+</button>
+        </footer>
     </div>
+
     
+    <script defer type="module" src="/src/main.ts"></script>
 </body>
 </html>
