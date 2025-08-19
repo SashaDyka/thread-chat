@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "npx tsc",
-    "dev": "nodemon src/server/app.ts"
+    "build": "npx tsc && npx tsc --project tsconfig.client.json",
+    "dev": "nodemon --exec ts-node src/server/app.ts"
   },
   "keywords": [],
   "author": "",
