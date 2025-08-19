@@ -4,33 +4,33 @@ import crypto from 'crypto';
 const initialMessages: Message[] = [
     {
         id: crypto.randomUUID(),
-        userId: 'Алиса',
-        text: 'Привет всем! Как дела?',
-        createdAt: Date.now() - 120000
+        userId: 'Liam',
+        text: "Hey everyone, hope you're all having a great week!",
+        createdAt: Date.now() - 150000
     },
     {
         id: crypto.randomUUID(),
-        userId: 'Боб',
-        text: 'Привет, Алиса! Всё отлично. Как твой проект?',
-        createdAt: Date.now() - 90000 
+        userId: 'Olivia',
+        text: "Thanks, you too! Just finished a big meeting.",
+        createdAt: Date.now() - 110000
     },
     {
         id: crypto.randomUUID(),
-        userId: 'Чарли',
-        text: 'Рад видеть всех здесь! У кого-нибудь есть интересные новости?',
-        createdAt: Date.now() - 60000 
+        userId: 'Noah',
+        text: "I'm looking for some help with a new feature. Any ideas?",
+        createdAt: Date.now() - 75000
     },
     {
         id: crypto.randomUUID(),
-        userId: 'Дэн',
-        text: 'Всем привет! Я тут немного опаздываю. Есть что-то важное?',
-        createdAt: Date.now() - 30000
+        userId: 'Ava',
+        text: "I might be able to help, Noah. What's the problem?",
+        createdAt: Date.now() - 40000
     },
     {
         id: crypto.randomUUID(),
-        userId: 'Ева',
-        text: 'Нет, Дэн, ничего не пропустил. Добро пожаловать!',
-        createdAt: Date.now() - 10000
+        userId: 'Ethan',
+        text: "Good to see you all. I've been working on a new design concept.",
+        createdAt: Date.now() - 15000
     }
 ];
 
